@@ -1,12 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash env
 
 ########################################
-#  TCA CLI Environment Setup Script: 1.2
+#  ARIE CLI Environment Setup Script: 1.2
 ########################################
-#
-#  Author: The Illusionist <T.me/Theillusionist_TCA> and Josh <T.Me/@IAmJoshBrolin>
-#
-########################################
+
+
+
+
 #
 # Dependencies: bash and curl.
 #
@@ -22,7 +22,7 @@ su -c 'setenforce 0'
 time apt install rsync aapt neofetch toilet ncurses-utils tsu openssl-tool ruby wget -y
 
 # Remove existing files
-tsu -c 'find . -iname '*tca*' -exec rm -rf {} \;'
+tsu -c 'find . -iname '*arie*' -exec rm -rf {} \;'
 
 # Device architecture
 [[ "$(uname -m)" =~ 'aarch64' ]] || {
@@ -31,6 +31,6 @@ tsu -c 'find . -iname '*tca*' -exec rm -rf {} \;'
 }
 
 # Fetch the ELF and setup
-tsu -c 'wget https://raw.githubusercontent.com/TeamTCA/Illusion-Remastered/master/Builds/arm64/tca_v1.2-cli -O ./tca_v1.2-cli'
-tsu -c 'chmod a+x tca_v1.2-cli'
-tsu -c ./tca_v1.2-cli
+tsu -c 'wget https://raw.githubusercontent.com/ARIEGAMING/Illusion-Remastered/master/Builds/arm64/arie_v1.2-cli -O ./arie_v1.2-cli'
+tsu -c 'chmod a+x arie_v1.2-cli'
+tsu -c ./arie_v1.2-cli
